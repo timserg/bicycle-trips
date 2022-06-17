@@ -1,0 +1,99 @@
+body {
+  /* height: fit-content; */
+  background-color: burlywood ;
+}
+.mb-5, .py-5 {
+  background-color:coral;
+}
+.bg-light_1
+ {
+  background-color: burlywood;
+}
+.container {
+  background-color:yellowgreen;
+  margin: 0px 0px 0px;
+  padding: 0px 0px;
+}
+#main {
+  background-color:burlywood;
+  height: fit-content;
+}
+.img-fluid {
+  width: 1420px;
+  height:auto
+}
+.img-fluid-one{
+  width: 400px;
+  height:auto
+}
+
+.img-fluid_2 {
+  display:flex;
+  justify-content: flex-end;
+  width: 420px;
+  height:auto 
+}
+.img-fluid_3 {
+  display:flex;
+  justify-content: flex-end;
+}
+.map {
+  width: 600px;
+  height: 600px;
+}
+#header {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  justify-content: center;
+  height: 130px;
+  background-color: #16c519;
+  color: #ffff;
+  padding: 0px;
+  }  
+  .createdRoutes {
+    margin-top: 30px;
+  }
+  .mapForRouteInfo {
+    width: 500px;
+    height: 350px;
+  }
+  nav span {
+padding-right: 15px;
+  }
+  .page-title {
+    background-color:yellowgreen;
+  }
+  .block {
+    display:flex;
+    height: 100px;
+    align-items:center;
+  }
+  .menu {
+   /* font-size:x-large;  */
+   font-size: 1.4em;
+  }
+  /* Подсветка кнопок меню при наведении */
+  .navbar>span>a:hover {
+    background-color: aquamarine;
+  }
+.indent {
+  padding-right: 40px;
+  float:left;
+}
+
+.half{
+  padding-top: 30px;
+}
+
+p{
+  font-size: larger;
+  /* text-align: justify; 
+  text-indent: 20px; */
+}
+
+.img {
+  height: 300px;
+  width: 400px;
+
+}
