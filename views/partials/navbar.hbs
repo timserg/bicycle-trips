@@ -1,0 +1,52 @@
+<!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    {{!-- <div class="container-fluid container-xl d-flex align-items-center justify-content-between"> --}}
+      <div class="indent">
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="/img/logo.png" alt="">
+        <h1>Веломаршруты.tut</h1>
+      </a>
+      </div>
+      
+    <div class="indent">
+      <nav id="navbar" class="navbar">       
+          <span class="menu"><a href="/">Главная</a></span>
+          <span class="menu"><a href="/posts">Все маршруты</a></span>
+          {{#if user.name}}
+          <span class="menu"><a href="/posts/add">Добавить свой маршрут</a></span>
+          <span class="menu"><a href="/posts/user/{{user.ids}}">Мои маршруты</a></span>
+          <span class="menu"><a ></a>Вы,<b>{{ user.name }}</b></a></span>
+          <span class="menu"><a href="/user/logout">Выход</a></span>
+          {{ else }}
+          <span class="menu"><a href="/user/signin">Вход</a></span>
+          <span class="menu"><a href="/user/signup">Регистрация</a></span>
+          {{/if}}
+      </nav><!-- .navbar -->
+    </div>
+
+      <div class="position-relative indent">
+        <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+        <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        <!-- ======= Search Form ======= -->
+      <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <span class="icon bi-search"></span>
+            <input type="text" placeholder="Search" class="form-control">
+            <div class="input-group-btn">
+              <button class="btn btn-default btn-lg" type="submit"><i class="bi bi-search"></i></button>
+            </div>
+          </form>
+        </div><!-- End Search Form -->
+
+      </div>
+
+    {{!-- </div> --}}
+
+  </header><!-- End Header -->
+

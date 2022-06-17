@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="/styles/style.css">
+<script defer src='/js/index.js'></script>
+</form>
+<div class="row">
+
+  <div class='col mt-5 mb-5'>
+    <center>
+      <div id='map' class='map col mt-5'></div>
+      <script  src='https://api-maps.yandex.ru/2.1/?apikey=75ff8d8f-55b5-40d7-afee-fd53548eedff&lang=ru_RU'></script>
+
+    </center>
+  </div>
+
+  <div class="col">
+
+    <main class="form-signin">
+
+      <form class='col-5' action="/posts/add" method="post">
+        <center>
+          <h1 style="padding-top: 50%" ; class="h3 mb-3 fw-normal">Добавьте свой маршрут</h1>
+        </center>
+
+        <div class="form-floating mt-1">
+          <input type="text" name="title" class="form-control" data-title="title" placeholder="" id="floatingInput"
+            required>
+          <label for="floatingInput">Название</label>
+        </div>
+        <div class="form-floating mt-1">
+          <input type="text" name="location" class="form-control" id="floatingPassword" required>
+          <label for="floatingPassword">Город</label>
+        </div>
+        <div class="form-floating mt-1">
+          <input type="text" name="start" class="form-control" id="floatingPassword">
+          <label for="floatingPassword">Начало
+          </label>
+        </div>
+        <div class="form-floating mt-1">
+          <input type="text" name="finish" class="form-control" id="floatingPassword">
+          <label for="floatingPassword">Конец</label>
+        </div>
+        <div class="form-floating mt-1">
+          <input type="text" name="lengthRoad" class="form-control" id="floatingPassword" readonly="readonly">
+          <label for="floatingPassword">Длина</label>
+          <input type="hidden" name="user_id" value="{{user.ids}}" placeholder="Растояние"><br>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Добавить</button>
+      </form>
+      <div>
+    </main>
+
+  </div>
+
+</div>
